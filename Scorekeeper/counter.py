@@ -32,7 +32,7 @@ class team:
 team_one = team(team_one_name)
 team_two = team(team_two_name)
 question_count = 1
-vertical_offset = 350
+vertical_offset = 330
 
 while running:
     # poll for events
@@ -89,7 +89,7 @@ while running:
 
     # render question count
     question_count_text = text.render("Question " + str(question_count) + " of 10", True, (0, 0, 0))
-    question_count_rect = question_count_text.get_rect(center=(screen.get_width() / 2, vertical_offset + 600))
+    question_count_rect = question_count_text.get_rect(center=(screen.get_width() / 2, screen.get_height() - 70))
     screen.blit(question_count_text, question_count_rect)
 
 
