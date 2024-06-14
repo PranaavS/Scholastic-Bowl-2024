@@ -1,8 +1,8 @@
 # variables that require immediate reassigning
-team_one_name = "Moms"
-team_two_name = "Pranaavs"
-round = 3
-set = 4
+team_one_name = "Dads"
+team_two_name = "Winners"
+round = 1
+set = 2
 
 import pygame
 
@@ -138,7 +138,8 @@ while running:
         question_count += 1
         pygame.time.wait(wait_constant)
     if keys[pygame.K_DOWN]:
-        question_count -= 1
+        if question_count > 0:
+            question_count -= 1
         pygame.time.wait(wait_constant)
     if keys[pygame.K_r]: # reset timer to standard 10 seconds
         should_time = True
