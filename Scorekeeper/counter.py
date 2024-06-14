@@ -1,8 +1,8 @@
 # variables that require immediate reassigning
-team_one_name = "Red"
-team_two_name = "Blue"
-round = 1
-set = 2
+team_one_name = "Moms"
+team_two_name = "Pranaavs"
+round = 3
+set = 4
 
 import pygame
 
@@ -32,7 +32,7 @@ class team:
 team_one = team(team_one_name)
 team_two = team(team_two_name)
 question_count = 1
-vertical_offset = 350
+vertical_offset = 330
 buzz_noise = pygame.mixer.Sound("Scorekeeper/buzz.mp3")
 noise_played = False
 should_time = False
@@ -112,7 +112,7 @@ while running:
 
     # render question count
     question_count_text = text.render("Question " + str(question_count) + " of 10", True, (0, 0, 0))
-    question_count_rect = question_count_text.get_rect(center=(screen.get_width() / 2, screen.get_height() - 150))
+    question_count_rect = question_count_text.get_rect(center=(screen.get_width() / 2, screen.get_height() - 100))
     screen.blit(question_count_text, question_count_rect)
 
     if should_time:
