@@ -37,6 +37,8 @@ buzz_noise = pygame.mixer.Sound("Scorekeeper/buzz.mp3")
 noise_played = False
 should_time = False
 timer = 0  # Initialize timer
+is_paused = False  # Initialize pause state
+paused_time = 0  # Store the time when paused
 
 def countdown(duration, begin_time):
     global noise_played
@@ -56,9 +58,16 @@ while running:
 
         if event.type == pygame.KEYDOWN and event.key == pygame.K_F11:
             pygame.display.toggle_fullscreen()
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_x:
+            is_paused = not is_paused
+            if is_paused:
+                paused_time = pygame.time.get_ticks() / 1000
+            else:
+                # Adjust begin_time to account for the pause duration
+                begin_time += pygame.time.get_ticks() / 1000 - paused_time
 
-    # update timer if should_time is True
-    if should_time:
+    # update timer if should_time is True and not paused
+    if should_time and not is_paused:
         timer = float(countdown(duration, begin_time))
 
     # fill the screen with a color to wipe away anything from last frame
@@ -135,19 +144,19 @@ while running:
             question_count -= 1
         pygame.time.wait(wait_constant)
     if keys[pygame.K_r]:  # reset timer to standard 10 seconds
-        should_time = True
+        should_time, is_paused = True, False
         duration = 10
         noise_played = False
         begin_time = pygame.time.get_ticks() / 1000
         pygame.time.wait(wait_constant)
     if keys[pygame.K_m]:  # reset timer to computation 30 seconds
-        should_time = True
+        should_time, is_paused = True, False
         duration = 30
         noise_played = False
         begin_time = pygame.time.get_ticks() / 1000
         pygame.time.wait(wait_constant)
     if keys[pygame.K_b]:  # reset timer to bounce 5 seconds
-        should_time = True
+        should_time, is_paused = True, False
         duration = 5
         noise_played = False
         begin_time = pygame.time.get_ticks() / 1000
