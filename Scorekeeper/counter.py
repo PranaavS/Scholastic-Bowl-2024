@@ -14,7 +14,7 @@ running = True
 dt = 0
 wait_constant = 200  # in milliseconds
 
-pygame.font.init()  # you have to call this at the start, if you want to use this module.
+pygame.font.init()
 heading = pygame.font.SysFont('Bahnschrift', 70, bold=False)
 text = pygame.font.SysFont('Helvetica', 70)
 team_font = pygame.font.SysFont('Helvetica', 30, bold=True)
@@ -28,7 +28,7 @@ class Team:
         self.score = score
 
 
-# variables that don't need immediate reassigning
+# variables that don't require immediate reassigning
 team_one = Team(team_one_name)
 team_two = Team(team_two_name)
 question_count = 1
@@ -42,8 +42,8 @@ paused_time = 0  # Store the time when paused
 
 def countdown(duration, begin_time):
     global noise_played
-    if duration + 0.2 + begin_time - pygame.time.get_ticks() / 1000 >= 0:
-        return "{:.1f}".format(duration + 0.2 + begin_time - pygame.time.get_ticks() / 1000)
+    if duration + wait_constant / 1000 + begin_time - pygame.time.get_ticks() / 1000 >= 0:
+        return "{:.1f}".format(duration + wait_constant / 1000 + begin_time - pygame.time.get_ticks() / 1000)
     else:
         if not noise_played:
             buzz_noise.play()
