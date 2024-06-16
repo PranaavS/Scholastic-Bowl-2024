@@ -3,8 +3,9 @@ import pygame
 # variables that require immediate reassigning
 team_one_name = "ONE"
 team_two_name = "TWO"
-round = 1
+round = 2
 set = 2
+max_round = 3
 
 # pygame setup
 pygame.init()
@@ -82,7 +83,7 @@ while running:
     screen.blit(title_text, title_rect)
 
     # render round and set numbers
-    title_text = round_set_font.render(f"Round {round} — Set {set}", True, (0, 0, 0))
+    title_text = round_set_font.render(f"Round {round} — Set {set}" if round != max_round else f"Round {round} — Finals", True, (0, 0, 0))
     title_rect = title_text.get_rect(center=(screen.get_width() / 2, vertical_offset - 100))
     screen.blit(title_text, title_rect)
 
