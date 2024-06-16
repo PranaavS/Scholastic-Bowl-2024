@@ -1,10 +1,10 @@
+import pygame
+
 # variables that require immediate reassigning
 team_one_name = "Dads"
 team_two_name = "Winners"
 round = 1
 set = 2
-
-import pygame
 
 # pygame setup
 pygame.init()
@@ -12,65 +12,60 @@ screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 clock = pygame.time.Clock()
 running = True
 dt = 0
-wait_constant = 200 # in milliseconds
+wait_constant = 200  # in milliseconds
 
-pygame.font.init() # you have to call this at the start, if you want to use this module.
+pygame.font.init()  # you have to call this at the start, if you want to use this module.
 heading = pygame.font.SysFont('Helvetica', 70, bold=True)
 text = pygame.font.SysFont('Helvetica', 70)
 team_font = pygame.font.SysFont('Helvetica', 30, bold=True)
-round_set_font = pygame.font.SysFont('Helvetica', 50, bold=True)
+round_set_font = pygame.font.SysFont('Helvetica', 50)
 time_font = pygame.font.SysFont('Helvetica', 130)
 
 
-class team:
+class Team:
     def __init__(self, name, score=0):
         self.name = name
         self.score = score
-        
+
 
 # variables that don't need immediate reassigning
-team_one = team(team_one_name)
-team_two = team(team_two_name)
+team_one = Team(team_one_name)
+team_two = Team(team_two_name)
 question_count = 1
 vertical_offset = 330
 buzz_noise = pygame.mixer.Sound("Scorekeeper/buzz.mp3")
 noise_played = False
 should_time = False
+timer = 0  # Initialize timer
 
 def countdown(duration, begin_time):
     global noise_played
-    if duration + begin_time - pygame.time.get_ticks() / 1000 >= 0:
-        return "{:.1f}".format(duration + begin_time - pygame.time.get_ticks() / 1000)
+    if duration + 0.2 + begin_time - pygame.time.get_ticks() / 1000 >= 0:
+        return "{:.1f}".format(duration + 0.2 + begin_time - pygame.time.get_ticks() / 1000)
     else:
         if not noise_played:
             buzz_noise.play()
             noise_played = True
         return str(0)
 
-# counter, display_time = 10, '10'.rjust(3)
-# pygame.time.set_timer(pygame.USEREVENT, 1000)
-
 while running:
     # poll for events
-    # pygame.QUIT event means the user clicked X to close your window
     for event in pygame.event.get():
-        # if event.type == pygame.USEREVENT: 
-        #     counter -= 1
-        #     if counter > 0:
-        #         display_time = str(counter)
-        #     else:
-        #         buzz_noise.play()
-
         if event.type == pygame.QUIT:
             running = False
 
-        # check for the fullscreen toggle event
         if event.type == pygame.KEYDOWN and event.key == pygame.K_F11:
-            # Toggle fullscreen mode
             pygame.display.toggle_fullscreen()
 
+    # update timer if should_time is True
+    if should_time:
+        timer = float(countdown(duration, begin_time))
+
     # fill the screen with a color to wipe away anything from last frame
-    screen.fill("white")
+    if should_time and timer < 3:
+        screen.fill("firebrick1")
+    else:
+        screen.fill("white")
 
     # render "SCHOLASTIC BOWL 2024" in gold above both team names
     title_text = heading.render("SCHOLASTIC BOWL 2024", True, (212, 175, 55))
@@ -82,8 +77,8 @@ while running:
     title_rect = title_text.get_rect(center=(screen.get_width() / 2, vertical_offset - 100))
     screen.blit(title_text, title_rect)
 
-    # render "TEAM" in gold above both team names
-    team_text = team_font.render("TEAM", True, (255, 0, 0))
+    # render "TEAM" in purple and blue above both team names
+    team_text = team_font.render("TEAM", True, "purple")
     team_rect = team_text.get_rect(center=(screen.get_width() / 4, vertical_offset))
     screen.blit(team_text, team_rect)
 
@@ -100,7 +95,6 @@ while running:
     team_two_text_rect = team_two_name_text.get_rect(center=(screen.get_width() / 4 * 3, vertical_offset + 60))
     screen.blit(team_two_name_text, team_two_text_rect)
 
-
     # render scores
     team_one_score_text = text.render(str(team_one.score), True, (0, 0, 0))
     team_one_score_rect = team_one_score_text.get_rect(center=(screen.get_width() / 4, vertical_offset + 210))
@@ -116,10 +110,9 @@ while running:
     screen.blit(question_count_text, question_count_rect)
 
     if should_time:
-        time_text = time_font.render(countdown(start_time, begin_time), True, (0, 0, 0))
+        time_text = time_font.render(str(timer) if timer > 0 else "0", True, (0, 0, 0))
         time_rect = time_text.get_rect(center=(screen.get_width() / 2, screen.get_height() / 2))
         screen.blit(time_text, time_rect)
-
 
     keys = pygame.key.get_pressed()
     if keys[pygame.K_a]:
@@ -134,41 +127,38 @@ while running:
     if keys[pygame.K_c]:
         team_two.score -= 10
         pygame.time.wait(wait_constant)
-    if keys[pygame.K_SPACE]:
+    if keys[pygame.K_SPACE] or keys[pygame.K_UP]:
         question_count += 1
         pygame.time.wait(wait_constant)
     if keys[pygame.K_DOWN]:
         if question_count > 0:
             question_count -= 1
         pygame.time.wait(wait_constant)
-    if keys[pygame.K_r]: # reset timer to standard 10 seconds
+    if keys[pygame.K_r]:  # reset timer to standard 10 seconds
         should_time = True
-        start_time = 10
+        duration = 10
         noise_played = False
         begin_time = pygame.time.get_ticks() / 1000
         pygame.time.wait(wait_constant)
-    if keys[pygame.K_m]: # reset timer to computation 30 seconds
+    if keys[pygame.K_m]:  # reset timer to computation 30 seconds
         should_time = True
-        start_time = 30
+        duration = 30
         noise_played = False
         begin_time = pygame.time.get_ticks() / 1000
-    if keys[pygame.K_b]: # reset timer to bounce 5 seconds
+        pygame.time.wait(wait_constant)
+    if keys[pygame.K_b]:  # reset timer to bounce 5 seconds
         should_time = True
-        start_time = 5
+        duration = 5
         noise_played = False
         begin_time = pygame.time.get_ticks() / 1000
-    if keys[pygame.K_p]: # hides and clears timer
+        pygame.time.wait(wait_constant)
+    if keys[pygame.K_p]:  # hides and clears timer
         should_time = False
         noise_played = True
-        start_time = 0
+        duration = 0
         pygame.time.wait(wait_constant)
 
-    # flip() the display to put your work on screen
     pygame.display.flip()
-
-    # limits FPS to 60
-    # dt is delta time in seconds since last frame, used for framerate-
-    # independent physics.
     dt = clock.tick(60) / 1000
 
 pygame.quit()
