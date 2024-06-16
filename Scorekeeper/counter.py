@@ -1,8 +1,8 @@
 import pygame
 
 # variables that require immediate reassigning
-team_one_name = "Dads"
-team_two_name = "Winners"
+team_one_name = "ONE"
+team_two_name = "TWO"
 round = 1
 set = 2
 
@@ -15,11 +15,11 @@ dt = 0
 wait_constant = 200  # in milliseconds
 
 pygame.font.init()  # you have to call this at the start, if you want to use this module.
-heading = pygame.font.SysFont('Helvetica', 70, bold=True)
+heading = pygame.font.SysFont('Bahnschrift', 70, bold=False)
 text = pygame.font.SysFont('Helvetica', 70)
 team_font = pygame.font.SysFont('Helvetica', 30, bold=True)
 round_set_font = pygame.font.SysFont('Helvetica', 50)
-time_font = pygame.font.SysFont('Helvetica', 130)
+time_font = pygame.font.SysFont('Bahnschrift', 130)
 
 
 class Team:
