@@ -124,6 +124,18 @@ while running:
         screen.blit(time_text, time_rect)
 
     keys = pygame.key.get_pressed()
+    if keys[pygame.K_1]:
+        team_one.score += 15
+        pygame.time.wait(wait_constant)
+    if keys[pygame.K_3]:
+        team_two.score += 15
+        pygame.time.wait(wait_constant)
+    if keys[pygame.K_q]:
+        team_one.score -= 15
+        pygame.time.wait(wait_constant)
+    if keys[pygame.K_e]:
+        team_two.score -= 15
+        pygame.time.wait(wait_constant)
     if keys[pygame.K_a]:
         team_one.score += 10
         pygame.time.wait(wait_constant)
