@@ -12,48 +12,48 @@ The `rules` folder contains supplemental documents. The file `rules.tex` is **no
 The `Title Pages` folder contains the title pages for each question set. All documents are of type `.pdf` and will likely open natively on your system.
 
 ## File structure
-Scholastic-Bowl-2024:
-|   README.md
-|   tree.txt
-|
-+---Round-1-Set-1
-|       Scholastic Bowl Round 1 Set 1 Questions.aux
-|       Scholastic Bowl Round 1 Set 1 Questions.fdb_latexmk
-|       Scholastic Bowl Round 1 Set 1 Questions.fls
-|       Scholastic Bowl Round 1 Set 1 Questions.log
-|       Scholastic Bowl Round 1 Set 1 Questions.out
-|       Scholastic Bowl Round 1 Set 1 Questions.pdf
-|       Scholastic Bowl Round 1 Set 1 Questions.synctex.gz
-|       Scholastic Bowl Round 1 Set 1 Questions.tex
-|
-+---Round-1-Set-2
-|       Scholastic Bowl Round 1 Set 2 Questions.aux
-|       Scholastic Bowl Round 1 Set 2 Questions.fdb_latexmk
-|       Scholastic Bowl Round 1 Set 2 Questions.fls
-|       Scholastic Bowl Round 1 Set 2 Questions.log
-|       Scholastic Bowl Round 1 Set 2 Questions.out
-|       Scholastic Bowl Round 1 Set 2 Questions.pdf
-|       Scholastic Bowl Round 1 Set 2 Questions.synctex.gz
-|       Scholastic Bowl Round 1 Set 2 Questions.tex
-|
-+---Rules
-|   |   Rules.aux
-|   |   Rules.tex
-|   |
-|   \---Player Notes
-|           Player Notes.aux
-|           Player Notes.fdb_latexmk
-|           Player Notes.fls
-|           Player Notes.log
-|           Player Notes.out
-|           Player Notes.pdf
-|           Player Notes.synctex.gz
-|           Player Notes.tex
-|
-+---Scorekeeper
-|       buzz.mp3
-|       counter.py
-|
-+---Title Pages
-|       Round 1 Set 1 Title Page.pdf
-|       Round 1 Set 2 Title Page.pdf
+    Scholastic-Bowl-2024:
+    |   README.md
+    |   tree.txt
+    |
+    +---Round-1-Set-1
+    |       Scholastic Bowl Round 1 Set 1 Questions.aux
+    |       Scholastic Bowl Round 1 Set 1 Questions.fdb_latexmk
+    |       Scholastic Bowl Round 1 Set 1 Questions.fls
+    |       Scholastic Bowl Round 1 Set 1 Questions.log
+    |       Scholastic Bowl Round 1 Set 1 Questions.out
+    |       Scholastic Bowl Round 1 Set 1 Questions.pdf
+    |       Scholastic Bowl Round 1 Set 1 Questions.synctex.gz
+    |       Scholastic Bowl Round 1 Set 1 Questions.tex
+    |
+    +---Round-1-Set-2
+    |       Scholastic Bowl Round 1 Set 2 Questions.aux
+    |       Scholastic Bowl Round 1 Set 2 Questions.fdb_latexmk
+    |       Scholastic Bowl Round 1 Set 2 Questions.fls
+    |       Scholastic Bowl Round 1 Set 2 Questions.log
+    |       Scholastic Bowl Round 1 Set 2 Questions.out
+    |       Scholastic Bowl Round 1 Set 2 Questions.pdf
+    |       Scholastic Bowl Round 1 Set 2 Questions.synctex.gz
+    |       Scholastic Bowl Round 1 Set 2 Questions.tex
+    |
+    +---Rules
+    |   |   Rules.aux
+    |   |   Rules.tex
+    |   |
+    |   \---Player Notes
+    |           Player Notes.aux
+    |           Player Notes.fdb_latexmk
+    |           Player Notes.fls
+    |           Player Notes.log
+    |           Player Notes.out
+    |           Player Notes.pdf
+    |           Player Notes.synctex.gz
+    |           Player Notes.tex
+    |
+    +---Scorekeeper
+    |       buzz.mp3
+    |       counter.py
+    |
+    +---Title Pages
+    |       Round 1 Set 1 Title Page.pdf
+    |       Round 1 Set 2 Title Page.pdf
