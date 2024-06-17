@@ -14,7 +14,6 @@ The `Title Pages` folder contains the title pages for each question set. All doc
 ## File structure
     Scholastic-Bowl-2024:
     |   README.md
-    |   tree.txt
     |
     +---Round-1-Set-1
     |       Scholastic Bowl Round 1 Set 1 Questions.aux
