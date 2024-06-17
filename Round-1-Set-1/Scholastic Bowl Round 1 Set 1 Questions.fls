@@ -149,28 +149,28 @@ INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 1 Title Page.pdf
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
@@ -183,10 +183,10 @@ INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tf
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Users\prana\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Rules\Rules.tex
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Rules\Rules.tex
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Rules\Rules.tex
-INPUT C:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Rules\Rules.tex
+INPUT ..\Rules\Rules.tex
+INPUT ..\Rules\..\Rules\Rules.tex
+INPUT ..\Rules\Rules.tex
+INPUT ..\Rules\..\Rules\Rules.tex
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
