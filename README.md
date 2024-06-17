@@ -9,7 +9,7 @@ This repository includes custom scorekeeping software. To use it, download the r
 
 ## Other documents
 The `rules` folder contains supplemental documents. The file `rules.tex` is **not** standalone---it is only used as an `\include` statement in the `.tex` files for question sets. The `Player Notes.tex` file (located within the `Player Notes` folder) **is** standalone.
-The `Title Pages` folder contains the title pages for each question set. All documents are of type `.pdf` and will likely open natively on your system.
+The `Title Pages` folder contains the title pages for each question set. While these documents *are* standalone, they are only used in an `\includepdf` command within each set. All documents are of type `.pdf` and will likely open natively on your system.
 
 ## File structure
     Scholastic-Bowl-2024:
