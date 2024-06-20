@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.20)  13 JUN 2024 00:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.20)  19 JUN 2024 20:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/prana/Documents/GitHub/Scholastic-Bowl-Questions-1/Rules/Player Notes/Player Notes.tex"
-(c:/Users/prana/Documents/GitHub/Scholastic-Bowl-Questions-1/Rules/Player Notes/Player Notes.tex
+**"c:/Users/prana/Documents/GitHub/Scholastic-Bowl-2024/Rules/Player Notes/Player Notes.tex"
+(c:/Users/prana/Documents/GitHub/Scholastic-Bowl-2024/Rules/Player Notes/Player Notes.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -651,9 +651,9 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 70.
+(Font)              <7> on input line 65.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 70.
+(Font)              <5> on input line 65.
 [1
 
 {C:/Users/prana/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Player Notes.aux)
@@ -665,17 +665,17 @@ Package rerunfilecheck Info: File `"Player Notes".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23451 strings out of 474369
- 444651 string characters out of 5740514
- 1944754 words of memory out of 5000000
- 45441 multiletter control sequences out of 15000+600000
- 560665 words of font info for 65 fonts, out of 8000000 for 9000
+ 23457 strings out of 474369
+ 444722 string characters out of 5740514
+ 1946754 words of memory out of 5000000
+ 45445 multiletter control sequences out of 15000+600000
+ 560734 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,10n,109p,1090b,955s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\prana\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Player Notes.pdf" (1 page, 49242 bytes).
+ 104i,10n,109p,1083b,955s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\prana\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "Player Notes.pdf" (1 page, 59229 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
+ 40 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
  12301 words of extra memory for PDF output out of 14400 (max. 10000000)
 
