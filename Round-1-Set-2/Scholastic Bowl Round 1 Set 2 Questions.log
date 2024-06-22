@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.20)  20 JUN 2024 18:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.20)  22 JUN 2024 01:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -463,7 +463,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has b
 <to be read again> 
                    \relax 
 l.98 ...h gives weight to all objects on Earth. \\
-                                                   ANSWER: \underline{gravit... [2] [3] [4] [5] (Scholastic Bowl Round 1 Set 2 Questions.aux)
+                                                   ANSWER: \underline{gravit... [2] [3] [4] [5] [6] (Scholastic Bowl Round 1 Set 2 Questions.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
@@ -472,17 +472,17 @@ Package rerunfilecheck Info: File `"Scholastic Bowl Round 1 Set 2 Questions".out
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12632 strings out of 474369
- 204068 string characters out of 5740514
+ 12639 strings out of 474369
+ 204120 string characters out of 5740514
  1941754 words of memory out of 5000000
  34728 multiletter control sequences out of 15000+600000
- 566833 words of font info for 113 fonts, out of 8000000 for 9000
+ 566941 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,79p,1105b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,79p,1105b,838s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\prana\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Scholastic Bowl Round 1 Set 2 Questions.pdf" (10 pages, 276346 bytes).
+Output written on "Scholastic Bowl Round 1 Set 2 Questions.pdf" (11 pages, 278261 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
  24602 words of extra memory for PDF output out of 24883 (max. 10000000)
 
