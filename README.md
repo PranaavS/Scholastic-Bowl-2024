@@ -5,7 +5,7 @@ This repository contains the documents and programs used to conduct the 2024 Sch
 To view question sets, navigate to the folder titled `Round-X-Set-Y` (with "X" and "Y" replaced with round and set numbers of the document you are looking for.) Within the folder, click **only** on the file ending in `.pdf`. Other files are used to compile the `.pdf` and may not open natively on your system.
 
 ## Software
-This repository includes custom scorekeeping software. To use it, download the repository, navigate to the `Scorekeeper` folder on a system with Python 3 installed, and run the file titled `counter.py`. It is necessary to download the entire repository because the `counter.py` file is dependent on the included virtual environment `venv`. If the entire repository is downloaded, it is **not** necessary to download the pygame package because it is installed to the virtual environment.
+This repository includes scorekeeping software. To use it, download the repository, navigate to the `Scorekeeper` folder on a system with Python 3 installed, and run the file titled `counter.py`. It is necessary to download the entire repository because the `counter.py` file is dependent on the included virtual environment `venv`. If the entire repository is downloaded, it is **not** necessary to download the pygame package because it is installed to the virtual environment.
 
 ## Other documents
 The `rules` folder contains supplemental documents. The file `rules.tex` is **not** standalone---it is only used as an `\include` statement in the `.tex` files for question sets. The `Player Notes.tex` file (located within the `Player Notes` folder) **is** standalone.
