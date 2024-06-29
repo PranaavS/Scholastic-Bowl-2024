@@ -6,7 +6,7 @@ entrants = pd.read_csv("Scratch Paper/Entrants.csv").values.tolist()
 print(entrants)
 
 def giveTexString(entry, round, set, captain=False):
-    set = set if round != max_round else "Finals"
+    set = ("Set " + str(set)) if round != max_round else "Finals"
     return rf"""\documentclass{{report}}
     \usepackage{{helvet}}
     \renewcommand{{\familydefault}}{{\sfdefault}}
@@ -55,7 +55,7 @@ def giveTexString(entry, round, set, captain=False):
 
     \begin{{flushright}}
         \huge {{\color{{orange}} CAPTAIN}} \hspace{{0.1cm}} \huge \textbf{{{entry[0][0].upper()}. {entry[1].upper()}}} \\ 
-        \LARGE Team {entry[3]} \\ Round {round} --- Set {set} \\ \includegraphics[width=1.5in]{{code.png}}
+        \LARGE Team {entry[3]} \\ Round {round} --- {set} \\ \includegraphics[width=1.5in]{{code.png}}
     \end{{flushright}}
 
     \vspace*{{\fill}}
@@ -120,7 +120,7 @@ def giveTexString(entry, round, set, captain=False):
 
     \begin{{flushright}}
         \huge \textbf{{{entry[0][0].upper()}. {entry[1].upper()}}} \\ 
-        \LARGE Team {entry[3]} \\ Round {round} --- Set {set} \\ \includegraphics[width=1.5in]{{code.png}}
+        \LARGE Team {entry[3]} \\ Round {round} --- {set} \\ \includegraphics[width=1.5in]{{code.png}}
     \end{{flushright}}
 
     \vspace*{{\fill}}
@@ -145,11 +145,12 @@ for i in range(max_round): # round
         for entry in entrants:
             round = i + 1
             set = j + 1
-            directory = f"Scratch Paper/PAPERS/Round {round} {f"Set {set}" if round != 3 else "Finals"}/{entry[0].upper()} {entry[1].upper()}"
+            set_text = ("Set " + str(set)) if round != max_round else "Finals"
+            directory = f"Scratch Paper/PAPERS/Round {round}, {set_text}/{entry[0].upper()} {entry[1].upper()}"
             os.makedirs(directory, exist_ok=True)
             file_path = f"{directory}/{entry[0]} {entry[1]}.tex"
 
             with open(file_path, "w") as f:
                 f.write(giveTexString(entry, round, set, captain=entry[2]))
-                qr = segno.make_qr(f"{entry[0]} {entry[1]}\n{entry[3]}\n{entry[2]}\nRound {round}, {f"Set {set}" if round != 3 else "Finals"}")
+                qr = segno.make_qr(f"{entry[0]} {entry[1]}\n{entry[3]}\n{entry[2]}\nRound {round}, {set_text}")
                 qr.save(f"{directory}/code.png")
