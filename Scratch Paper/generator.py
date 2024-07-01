@@ -1,6 +1,22 @@
 import pandas as pd
 import os
 import segno
+import shutil
+
+def delete_contents(folder_path):
+    try:
+        for filename in os.listdir(folder_path):
+            file_path = os.path.join(folder_path, filename)
+            try:
+                if os.path.isfile(file_path):
+                    os.remove(file_path)
+                elif os.path.isdir(file_path):
+                    shutil.rmtree(file_path)
+            except Exception as e:
+                print(f"Failed to delete {file_path}. Reason: {e}")
+    except Exception as e:
+        print(f"Failed to list contents of {folder_path}. Reason: {e}")
+
 
 entrants = pd.read_csv("Scratch Paper/Entrants.csv").values.tolist()
 print(entrants)
@@ -9,7 +25,7 @@ def giveTexString(entry, round, set, captain=False):
     set = ("Set " + str(set)) if round != max_round else "Finals"
     return rf"""\documentclass{{report}}
     \usepackage{{helvet}}
-    \renewcommand{{\familydefault}}{{\sfdefault}}
+    \renewcommand{{\familydefault}}{{\sfdefault}}   
     \usepackage{{hyperref}}
     \usepackage{{graphicx}}
     \usepackage{{enumerate}}
@@ -55,7 +71,7 @@ def giveTexString(entry, round, set, captain=False):
 
     \begin{{flushright}}
         \huge {{\color{{orange}} CAPTAIN}} \hspace{{0.1cm}} \huge \textbf{{{entry[0][0].upper()}. {entry[1].upper()}}} \\ 
-        \LARGE Team {entry[3]} \\ Round {round} --- {set} \\ \includegraphics[width=1.5in]{{code.png}}
+        \LARGE Team {entry[3]} \\ Round {round} --- {set} \\ \vspace*{{0.4cm}} \fbox{{\includegraphics[width=1.5in]{{code.png}}}} \hspace*{{0.1cm}} \\ \vspace*{{-0.45cm}} \small Do \textbf{{not}} write here. \hspace{{0.80cm}}.
     \end{{flushright}}
 
     \vspace*{{\fill}}
@@ -64,6 +80,28 @@ def giveTexString(entry, round, set, captain=False):
     \end{{center}}
 
     % Draw the box around the margins
+    \begin{{tikzpicture}}[remember picture, overlay]
+        \draw[black, line width=1pt]
+            ([shift={{(0.2in,-0.4in)}}] current page.north west) --
+            ([shift={{(-0.2in,-0.4in)}}] current page.north east) --
+            ([shift={{(-0.2in,0.4in)}}] current page.south east) --
+            ([shift={{(0.2in,0.4in)}}] current page.south west) -- cycle;
+    \end{{tikzpicture}}
+
+    \newpage
+
+    \thispagestyle{{empty}}
+
+    \begin{{flushright}}
+        \vspace*{{-0.2cm}} \fbox{{\includegraphics[width=1.5in]{{code.png}}}} \hspace*{{0.1cm}} \\ \vspace*{{-0.45cm}} \small Do \textbf{{not}} write here. \hspace{{0.80cm}}.
+    \end{{flushright}}
+
+    \vspace*{{\fill}}
+    \begin{{center}}
+        This page may be used for scratch work. Do \textbf{{not}} write outside this box. This page will be scanned.
+    \end{{center}}
+
+    % Draw the next box around the margins
     \begin{{tikzpicture}}[remember picture, overlay]
         \draw[black, line width=1pt]
             ([shift={{(0.2in,-0.4in)}}] current page.north west) --
@@ -120,7 +158,7 @@ def giveTexString(entry, round, set, captain=False):
 
     \begin{{flushright}}
         \huge \textbf{{{entry[0][0].upper()}. {entry[1].upper()}}} \\ 
-        \LARGE Team {entry[3]} \\ Round {round} --- {set} \\ \includegraphics[width=1.5in]{{code.png}}
+        \LARGE Team {entry[3]} \\ Round {round} --- {set} \\ \vspace*{{0.4cm}} \fbox{{\includegraphics[width=1.5in]{{code.png}}}} \hspace*{{0.1cm}} \\ \vspace*{{-0.45cm}} \small Do \textbf{{not}} write here. \hspace{{0.80cm}}.
     \end{{flushright}}
 
     \vspace*{{\fill}}
@@ -137,12 +175,40 @@ def giveTexString(entry, round, set, captain=False):
             ([shift={{(0.2in,0.4in)}}] current page.south west) -- cycle;
     \end{{tikzpicture}}
 
+    \newpage
+
+    \thispagestyle{{empty}}
+
+    \begin{{flushright}}
+        \vspace*{{-0.2cm}} \fbox{{\includegraphics[width=1.5in]{{code.png}}}} \hspace*{{0.1cm}} \\ \vspace*{{-0.45cm}} \small Do \textbf{{not}} write here. \hspace{{0.80cm}}.
+    \end{{flushright}}
+
+    \vspace*{{\fill}}
+    \begin{{center}}
+        This page may be used for scratch work. Do \textbf{{not}} write outside this box. This page will be scanned.
+    \end{{center}}
+
+    % Draw the next box around the margins
+    \begin{{tikzpicture}}[remember picture, overlay]
+        \draw[black, line width=1pt]
+            ([shift={{(0.2in,-0.4in)}}] current page.north west) --
+            ([shift={{(-0.2in,-0.4in)}}] current page.north east) --
+            ([shift={{(-0.2in,0.4in)}}] current page.south east) --
+            ([shift={{(0.2in,0.4in)}}] current page.south west) -- cycle;
+    \end{{tikzpicture}}
+
     \end{{document}}"""
+
+delete_contents("Scratch Paper/PAPERS")
 
 max_round = 3
 for i in range(max_round): # round
     for j in range(int(2**max_round / 2**(i + 1))): # set
         for entry in entrants:
+
+            if entry[2] not in ('TRUE', 'FALSE', True, False):
+                raise TypeError(f"Captain field for entry {entry[0]} {entry[1]} is neither TRUE nor FALSE")
+
             round = i + 1
             set = j + 1
             set_text = ("Set " + str(set)) if round != max_round else "Finals"
@@ -154,3 +220,5 @@ for i in range(max_round): # round
                 f.write(giveTexString(entry, round, set, captain=entry[2]))
                 qr = segno.make_qr(f"{entry[0]} {entry[1]}\n{entry[3]}\n{entry[2]}\nRound {round}, {set_text}")
                 qr.save(f"{directory}/code.png")
+
+print("Finished.")
