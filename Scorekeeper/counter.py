@@ -1,8 +1,8 @@
 import pygame
 
 # variables that require immediate reassigning
-team_one_name = "ONE"
-team_two_name = "TWO"
+team_one_name = "BANANAS"
+team_two_name = "APPLES"
 round = 2
 set = 2
 max_round = 3

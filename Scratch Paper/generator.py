@@ -3,7 +3,8 @@ import os
 import segno
 import shutil
 
-def delete_contents(folder_path):
+
+def deleteContents(folder_path):
     try:
         for filename in os.listdir(folder_path):
             file_path = os.path.join(folder_path, filename)
@@ -21,7 +22,7 @@ def delete_contents(folder_path):
 entrants = pd.read_csv("Scratch Paper/Entrants.csv").values.tolist()
 print(entrants)
 
-def giveTexString(entry, round, set, captain=False):
+def giveTexString(entry, round, set):
     set = ("Set " + str(set)) if round != max_round else "Finals"
     return rf"""\documentclass{{report}}
     \usepackage{{helvet}}
@@ -70,7 +71,7 @@ def giveTexString(entry, round, set, captain=False):
     \thispagestyle{{empty}}
 
     \begin{{flushright}}
-        \huge {{\color{{orange}} CAPTAIN}} \hspace{{0.1cm}} \huge \textbf{{{entry[0][0].upper()}. {entry[1].upper()}}} \\ 
+        \huge {{\color{{orange}} CAPTAIN}} \hspace{{0.1cm}} \huge \textbf{{{entry[4]}}} \\ 
         \LARGE Team {entry[3]} \\ Round {round} --- {set} \\ \vspace*{{0.4cm}} \fbox{{\includegraphics[width=1.5in]{{code.png}}}} \hspace*{{0.1cm}} \\ \vspace*{{-0.45cm}} \small Do \textbf{{not}} write here. \hspace{{0.80cm}}.
     \end{{flushright}}
 
@@ -110,7 +111,7 @@ def giveTexString(entry, round, set, captain=False):
             ([shift={{(0.2in,0.4in)}}] current page.south west) -- cycle;
     \end{{tikzpicture}}
 
-    \end{{document}}""" if captain else rf"""\documentclass{{report}}
+    \end{{document}}""" if entry[2] else rf"""\documentclass{{report}}
     \usepackage{{helvet}}
     \renewcommand{{\familydefault}}{{\sfdefault}}
     \usepackage{{hyperref}}
@@ -157,7 +158,7 @@ def giveTexString(entry, round, set, captain=False):
     \thispagestyle{{empty}}
 
     \begin{{flushright}}
-        \huge \textbf{{{entry[0][0].upper()}. {entry[1].upper()}}} \\ 
+        \huge \textbf{{{entry[4]}}} \\ 
         \LARGE Team {entry[3]} \\ Round {round} --- {set} \\ \vspace*{{0.4cm}} \fbox{{\includegraphics[width=1.5in]{{code.png}}}} \hspace*{{0.1cm}} \\ \vspace*{{-0.45cm}} \small Do \textbf{{not}} write here. \hspace{{0.80cm}}.
     \end{{flushright}}
 
@@ -199,7 +200,59 @@ def giveTexString(entry, round, set, captain=False):
 
     \end{{document}}"""
 
-delete_contents("Scratch Paper/PAPERS")
+deleteContents("Scratch Paper/PAPERS")
+
+# group people by last name
+last_name_dict = {}
+first_names = [entry[0].capitalize() for entry in entrants]
+last_names = [entry[1].upper() for entry in entrants]
+
+for last_name in last_names:
+    last_name_dict[last_name] = []
+
+for i in range(len(last_names)):
+    last_name_dict[last_names[i]].append(first_names[i])
+
+print(last_name_dict)
+
+def containsDuplicates(list):
+    return len(list) > len(set(list)) # number of elements is greater than number of unique elements
+
+
+char_limit = 15
+def generateInitials(first_names): # gives first initial(s) for a list of first names
+    j = 1
+    initials = [first_name[0] for first_name in first_names]
+    while (containsDuplicates(initials) and j < char_limit):
+        initials_copy = initials[:]
+        for i in range(len(initials)):
+            initials_copy.pop(i)
+            if initials[i] in initials_copy:
+                try:
+                    initials[i] += first_names[i][j]
+                except:
+                    pass
+            initials_copy = [first_name[:j] for first_name in first_names]
+        j += 1
+    return initials
+
+
+print(generateInitials(last_name_dict["DOE"]))
+for last_name in last_name_dict:
+    last_name_dict[last_name] = generateInitials(last_name_dict[last_name])
+
+print(last_name_dict)
+
+entrants_abbrev = []
+for last_name, first_names in last_name_dict.items():
+    for first_name in first_names:
+        entrants_abbrev.append(f"{first_name}. {last_name}")
+
+entrants.sort(key=lambda x: x[0])
+entrants_abbrev.sort()
+
+for i in range(len(entrants)):
+    entrants[i].append(entrants_abbrev[i])
 
 max_round = 3
 for i in range(max_round): # round
@@ -217,7 +270,7 @@ for i in range(max_round): # round
             file_path = f"{directory}/{entry[0]} {entry[1]}.tex"
 
             with open(file_path, "w") as f:
-                f.write(giveTexString(entry, round, set, captain=entry[2]))
+                f.write(giveTexString(entry, round, set))
                 qr = segno.make_qr(f"{entry[0]} {entry[1]}\n{entry[3]}\n{entry[2]}\nRound {round}, {set_text}")
                 qr.save(f"{directory}/code.png")
 
