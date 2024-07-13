@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.22)  4 JUL 2024 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.20)  9 JUL 2024 21:28
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/prana/Documents/GitHub/Scholastic-Bowl-Questions-1/Round-1-Set-2/Scholastic Bowl Round 1 Set 2 Questions.tex"
-(c:/Users/prana/Documents/GitHub/Scholastic-Bowl-Questions-1/Round-1-Set-2/Scholastic Bowl Round 1 Set 2 Questions.tex
+**"c:/Users/prana/Documents/GitHub/Scholastic-Bowl-2024/Round-1-Set-2/Scholastic Bowl Round 1 Set 2 Questions.tex"
+(c:/Users/prana/Documents/GitHub/Scholastic-Bowl-2024/Round-1-Set-2/Scholastic Bowl Round 1 Set 2 Questions.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -180,7 +180,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 ) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
 ) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
-Package: pdfpages 2024/05/29 v0.6a Insert pages of external PDF documents (AM)
+Package: pdfpages 2024/01/21 v0.5y Insert pages of external PDF documents (AM)
  (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
@@ -204,7 +204,7 @@ Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \AM@pageheight=\dimen153
 \AM@fboxrule=\dimen154
  (C:\Users\prana\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
-File: pppdftex.def 2024/05/29 v0.6a Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count281
 \AM@pagebox=\box52
@@ -472,15 +472,15 @@ Package rerunfilecheck Info: File `"Scholastic Bowl Round 1 Set 2 Questions".out
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12650 strings out of 474370
- 204278 string characters out of 5740535
+ 12650 strings out of 474369
+ 204201 string characters out of 5740514
  1941754 words of memory out of 5000000
- 34727 multiletter control sequences out of 15000+600000
+ 34728 multiletter control sequences out of 15000+600000
  567151 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,79p,1112b,838s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,79p,1105b,838s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\prana\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Scholastic Bowl Round 1 Set 2 Questions.pdf" (11 pages, 280155 bytes).
+Output written on "Scholastic Bowl Round 1 Set 2 Questions.pdf" (11 pages, 280347 bytes).
 PDF statistics:
  167 PDF objects out of 1000 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
