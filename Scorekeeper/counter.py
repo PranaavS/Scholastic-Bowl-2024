@@ -78,9 +78,11 @@ while running:
         screen.fill("white")
 
     # render "SCHOLASTIC BOWL 2024" in gold above both team names
-    title_text = heading.render("SCHOLASTIC BOWL 2024", True, (212, 175, 55))
-    title_rect = title_text.get_rect(center=(screen.get_width() / 2, vertical_offset - 200))
-    screen.blit(title_text, title_rect)
+    logo = pygame.image.load("Scorekeeper/Scho Bowl Logo Horizontal.png").convert_alpha()
+    # logo = pygame.transform.scale_by(logo, 1)
+    # title_text = heading.render("SCHOLASTIC BOWL 2024", True, (212, 175, 55))
+    title_rect = logo.get_rect(center=(screen.get_width() / 2, vertical_offset - 200))
+    screen.blit(logo, title_rect)
 
     # render round and set numbers
     title_text = round_set_font.render(f"Round {round} — Set {set}" if round != max_round else f"Round {round} — Finals", True, (0, 0, 0))
