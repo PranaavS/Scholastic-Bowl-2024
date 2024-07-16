@@ -271,7 +271,8 @@ for i in range(max_round): # round
 
             with open(file_path, "w") as f:
                 f.write(giveTexString(entry, round, set))
-                qr = segno.make_qr(f"{entry[0]} {entry[1]}\n{entry[3]}\n{entry[2]}\nRound {round}, {set_text}")
+                formatted_set_text = ("Set-" + str(set)) if round != max_round else "Finals"
+                qr = segno.make_qr(f"{entry[0]} {entry[1]}\n{entry[3]}\n{entry[2]}\nRound-{round}-{formatted_set_text}")
                 qr.save(f"{directory}/code.png")
 
 print("Finished.")
