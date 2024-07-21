@@ -5,7 +5,7 @@ This repository contains the documents and programs used to conduct the 2024 Sch
 To view question sets, navigate to the folder titled `Round-X-Set-Y` (with "X" and "Y" replaced with round and set numbers of the document you are looking for.) Within the folder, click **only** on the file ending in `.pdf`. Other files are used to compile the `.pdf` and may not open natively on your system.
 
 ## Scratch Paper
-To view contestant scratch paper for a given game, navigate to the folder titled `Round-X-Set-Y` (with "X" and "Y" replaced with round and set numbers of the game you are looking for.) and find the `.pdf` there.
+To view contestant scratch paper for a given game, navigate to the folder titled `Round-X-Set-Y` (with "X" and "Y" replaced with round and set numbers of the game you are looking for.) Then, open the `Scratch Paper` folder and find the `.pdf` there.
 
 ## Software
 Before using any software, it is important to install the required dependencies. To do so, first download the repository. Then, navigate to the download location and double click on the folder titled `Scholastic-Bowl-2024`. Then, double click on the path (displayed, by default, near the top of the file explorer) and replace the text with *cmd*. Press enter. A command line should open. There, paste the command `venv\Scripts\activate` and press enter. Then, in the same terminal, paste the command `pip3 install -r requirements.txt` and press enter. Wait until the command line says *Successfully installed...* You can now run any `.py` file within the repository.
