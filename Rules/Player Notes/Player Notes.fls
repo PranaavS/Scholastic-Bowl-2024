@@ -1,6 +1,6 @@
-PWD c:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Rules\Player Notes
+PWD c:\Users\prana\Documents\GitHub\Scholastic-Bowl-Questions-1\Rules\Player Notes
 INPUT C:\Users\prana\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Rules\Player Notes\Player Notes.tex
+INPUT c:\Users\prana\Documents\GitHub\Scholastic-Bowl-Questions-1\Rules\Player Notes\Player Notes.tex
 OUTPUT Player Notes.log
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
