@@ -1,0 +1,81 @@
+\documentclass{report}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{microtype}
+
+
+\usepackage{geometry}
+ \geometry{
+ left=1 in,
+ right=1 in,
+ bottom=1 in,
+ top=1 in
+}
+
+\setlength\parindent{0pt}
+
+\definecolor{lightGray}{HTML}{d8dde6}
+
+\newcommand*{\backtrack}{\setcounter{enumi}{\numexpr\theenumi-1\relax}}
+
+\title{\textbf{Scholastic Bowl} \\ Round 1 --- Set 3}
+\author{Pranaav Sureshkumar \\ \href{mailto:pranaav2@illinois.edu}{pranaav2@illinois.edu}}
+\date{\today}
+
+\begin{document}
+
+\includepdf[pages=-]{../Title Pages/Round 1 Set 3 Title Page.pdf}
+
+\maketitle
+
+\import{../Rules/}{Rules.tex}
+
+\newpage
+
+\vspace*{\fill}
+\centering
+\thispagestyle{empty}
+\Large
+Questions begin on the next page.
+\vspace*{\fill}
+
+\normalsize
+\newpage
+\setcounter{page}{1}
+
+\begin{enumerate}
+    % Question 1
+    \item \textbf{SUBJECT} \\ Fill
+\end{enumerate}
+
+
+\vspace*{0.5 cm}
+\centering
+\rule{10 cm}{0.4pt}
+
+\Large
+END OF QUESTION SET
+\newpage
+
+\vspace*{\fill}
+\centering
+\thispagestyle{empty}
+\Large
+No questions on this page
+\vspace*{\fill}
+
+\newpage
+
+\vspace*{\fill}
+\centering
+\thispagestyle{empty}
+\Large
+No questions on this page
+\vspace*{\fill}
+
+\end{document}
