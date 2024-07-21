@@ -9,7 +9,6 @@ if __name__ == "__main__":
         src_path = f"Scratch Paper/USED/{filename}"
         image_list = convert_from_path(src_path)
         document = image_list[0]
-        document.show()
 
         # Decode the QR code or barcode
         data = decode(document)[0].data.decode().split("\n")
