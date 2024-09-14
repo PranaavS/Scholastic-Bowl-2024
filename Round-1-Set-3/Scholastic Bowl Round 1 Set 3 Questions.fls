@@ -1,7 +1,7 @@
-PWD c:\Users\prana\Documents\GitHub\Scholastic-Bowl-Questions-1\Round-1-Set-2
+PWD c:\Users\prana\Documents\GitHub\Scholastic-Bowl-Questions-1\Round-1-Set-3
 INPUT C:\Users\prana\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\prana\Documents\GitHub\Scholastic-Bowl-Questions-1\Round-1-Set-2\Scholastic Bowl Round 1 Set 2 Questions.tex
-OUTPUT Scholastic Bowl Round 1 Set 2 Questions.log
+INPUT c:\Users\prana\Documents\GitHub\Scholastic-Bowl-Questions-1\Round-1-Set-3\Scholastic Bowl Round 1 Set 3 Questions.tex
+OUTPUT Scholastic Bowl Round 1 Set 3 Questions.log
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
@@ -120,18 +120,18 @@ INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.c
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\Scholastic Bowl Round 1 Set 2 Questions.aux
-INPUT .\Scholastic Bowl Round 1 Set 2 Questions.aux
-INPUT Scholastic Bowl Round 1 Set 2 Questions.aux
-OUTPUT Scholastic Bowl Round 1 Set 2 Questions.aux
-INPUT .\Scholastic Bowl Round 1 Set 2 Questions.out
-INPUT .\Scholastic Bowl Round 1 Set 2 Questions.out
-INPUT Scholastic Bowl Round 1 Set 2 Questions.out
-INPUT Scholastic Bowl Round 1 Set 2 Questions.out
-INPUT .\Scholastic Bowl Round 1 Set 2 Questions.out
-INPUT .\Scholastic Bowl Round 1 Set 2 Questions.out
-OUTPUT Scholastic Bowl Round 1 Set 2 Questions.out
-OUTPUT Scholastic Bowl Round 1 Set 2 Questions.pdf
+INPUT .\Scholastic Bowl Round 1 Set 3 Questions.aux
+INPUT .\Scholastic Bowl Round 1 Set 3 Questions.aux
+INPUT Scholastic Bowl Round 1 Set 3 Questions.aux
+OUTPUT Scholastic Bowl Round 1 Set 3 Questions.aux
+INPUT .\Scholastic Bowl Round 1 Set 3 Questions.out
+INPUT .\Scholastic Bowl Round 1 Set 3 Questions.out
+INPUT Scholastic Bowl Round 1 Set 3 Questions.out
+INPUT Scholastic Bowl Round 1 Set 3 Questions.out
+INPUT .\Scholastic Bowl Round 1 Set 3 Questions.out
+INPUT .\Scholastic Bowl Round 1 Set 3 Questions.out
+OUTPUT Scholastic Bowl Round 1 Set 3 Questions.out
+OUTPUT Scholastic Bowl Round 1 Set 3 Questions.pdf
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -149,28 +149,28 @@ INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
-INPUT ..\Title Pages\Round 1 Set 2 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
+INPUT ..\Title Pages\Round 1 Set 3 Title Page.pdf
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
@@ -191,9 +191,9 @@ INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm100
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT Scholastic Bowl Round 1 Set 2 Questions.aux
-INPUT .\Scholastic Bowl Round 1 Set 2 Questions.out
-INPUT .\Scholastic Bowl Round 1 Set 2 Questions.out
+INPUT Scholastic Bowl Round 1 Set 3 Questions.aux
+INPUT .\Scholastic Bowl Round 1 Set 3 Questions.out
+INPUT .\Scholastic Bowl Round 1 Set 3 Questions.out
 INPUT C:\Users\prana\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\prana\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
