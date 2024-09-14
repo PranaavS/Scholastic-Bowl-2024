@@ -12,4 +12,3 @@ document.show()
 data = decode(document)[0].data.decode().split("\n")
 
 print(data)
-    
