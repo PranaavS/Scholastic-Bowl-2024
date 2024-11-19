@@ -1,13 +1,13 @@
-First Name ,Last Name ,Captain ,Team
-Billy      ,Joel      ,TRUE    ,Bananas
-Noel       ,Denzel    ,FALSE   ,Bananas
-Lawrence   ,Mao       ,FALSE   ,Bananas
-John       ,Doe       ,FALSE   ,Bananas
-Steven     ,He        ,FALSE   ,Bananas
-Steven     ,Long      ,FALSE   ,Oranges
-Jack       ,Doe       ,FALSE   ,Oranges
-Joseph     ,Doe       ,FALSE   ,Oranges
-Johnna     ,Doe       ,FALSE   ,Oranges
-Johna      ,Doe       ,FALSE   ,Oranges
-Johnb      ,Doe       ,FALSE   ,Apples
-Johnab     ,Doe       ,FALSE   ,Apples
+First Name,Last Name,Captain,Team
+Billy,Joel,TRUE,Bananas
+Noel,Denzel,FALSE,Bananas
+Lawrence,Mao,FALSE,Bananas
+John,Doe,FALSE,Bananas
+Steven,He,FALSE,Bananas
+Steven,Long,FALSE,Oranges
+Jack,Doe,FALSE,Oranges
+Joseph,Doe,FALSE,Oranges
+Johnna,Doe,FALSE,Oranges
+Johna,Doe,FALSE,Oranges
+Johnb,Doe,FALSE,Apples
+Johnab,Doe,FALSE,Apples

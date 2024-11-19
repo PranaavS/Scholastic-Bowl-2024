@@ -8,7 +8,7 @@ image_list = convert_from_path(path)
 document = image_list[0]
 document.show()
 
-# Decode the QR code or barcode
+# Decode the QR code
 data = decode(document)[0].data.decode().split("\n")
 
 print(data)
