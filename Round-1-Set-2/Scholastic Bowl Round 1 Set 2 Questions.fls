@@ -1,6 +1,6 @@
-PWD c:\Users\prana\Documents\GitHub\Scholastic-Bowl-Questions-1\Round-1-Set-2
+PWD c:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Round-1-Set-2
 INPUT C:\Users\prana\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\prana\Documents\GitHub\Scholastic-Bowl-Questions-1\Round-1-Set-2\Scholastic Bowl Round 1 Set 2 Questions.tex
+INPUT c:\Users\prana\Documents\GitHub\Scholastic-Bowl-2024\Round-1-Set-2\Scholastic Bowl Round 1 Set 2 Questions.tex
 OUTPUT Scholastic Bowl Round 1 Set 2 Questions.log
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
@@ -189,13 +189,12 @@ INPUT ..\Rules\Rules.tex
 INPUT ..\Rules\..\Rules\Rules.tex
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\cm-super\cm-super-ts1.enc
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT Scholastic Bowl Round 1 Set 2 Questions.aux
 INPUT .\Scholastic Bowl Round 1 Set 2 Questions.out
 INPUT .\Scholastic Bowl Round 1 Set 2 Questions.out
-INPUT C:\Users\prana\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
-INPUT C:\Users\prana\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -208,3 +207,5 @@ INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1000.pfb
+INPUT C:\Users\prana\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1000.pfb
