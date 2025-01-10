@@ -1,5 +1,5 @@
 # Scholastic Bowl 2024
-This repository contains the documents and programs used to conduct the 2024 Scholastic Bowl.
+This repository contains the documents and programs used to conduct the 2024 Scholastic Bowl fundraising tournament. All questions and programs are written by Pranaav Sureshkumar [pranaav924@gmail.com](mailto:pranaav924@gmail.com).
 
 ## Questions
 To view question sets, navigate to the folder titled `Round-X-Set-Y` (with "X" and "Y" replaced with round and set numbers of the document you are looking for.) Within the folder, click **only** on the file ending in `.pdf`. Other files are used to compile the `.pdf` and may not open natively on your system.
